@@ -10,7 +10,7 @@ public class App {
         try (InputStream is = App.class.getClassLoader().getResourceAsStream(reslocation)) {
             Properties prop = new Properties();
             prop.load(is);
-            return prop.getProperty("yourname");
+            return "Jhon Appleseed";
         }
     }
     public static void main(String[] args) throws IOException {
